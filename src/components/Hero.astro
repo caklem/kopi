@@ -60,6 +60,27 @@
 		overflow: hidden;
 	}
 
+	/* Mobile optimization for background */
+	@media (max-width: 768px) {
+		.hero {
+			background-attachment: scroll; /* Fix for mobile performance */
+			background-position: center center;
+			background-size: cover;
+			min-height: 100vh;
+			padding: 2rem 0;
+			background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(160, 82, 45, 0.8)), url('/kopi1.jpg');
+		}
+	}
+
+	@media (max-width: 480px) {
+		.hero {
+			min-height: 100svh; /* Use svh for better mobile viewport handling */
+			background-position: 60% center; /* Adjust for better mobile view */
+			background-size: 130% auto; /* Ensure full coverage on small screens */
+			background: linear-gradient(rgba(139, 69, 19, 0.85), rgba(160, 82, 45, 0.85)), url('/kopi1.jpg');
+		}
+	}
+
 	.hero-background {
 		position: absolute;
 		top: 0;
@@ -79,6 +100,13 @@
 		background: rgba(0, 0, 0, 0.2);
 	}
 
+	/* Enhanced overlay for mobile */
+	@media (max-width: 768px) {
+		.hero-overlay {
+			background: rgba(0, 0, 0, 0.4);
+		}
+	}
+
 	.hero-content {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -87,6 +115,7 @@
 		position: relative;
 		z-index: 2;
 		margin-top: 80px;
+		padding: 2rem 0;
 	}
 
 	.hero-text h1 {
@@ -288,32 +317,41 @@
 	@media (max-width: 768px) {
 		.hero-content {
 			grid-template-columns: 1fr;
-			gap: 2rem;
+			gap: 3rem;
 			text-align: center;
+			margin-top: 60px;
+			padding: 1rem 0;
 		}
 
 		.hero-text h1 {
 			font-size: 2.5rem;
+			line-height: 1.2;
+			margin-bottom: 1.5rem;
 		}
 
 		.hero-description {
 			font-size: 1.1rem;
+			margin-bottom: 2rem;
+			padding: 0 1rem;
 		}
 
 		.hero-buttons {
 			justify-content: center;
 			flex-wrap: wrap;
+			gap: 1rem;
+			margin-bottom: 2rem;
 		}
 
 		.hero-buttons .btn {
-			padding: 12px 24px;
+			padding: 14px 28px;
 			font-size: 1rem;
-			min-width: 150px;
+			min-width: 160px;
 			text-align: center;
+			border-radius: 50px;
 		}
 
 		.hero-buttons .btn.btn-outline {
-			padding-left: 40px;
+			padding-left: 42px;
 		}
 
 		.coffee-cup {
@@ -324,14 +362,57 @@
 		.hero-stats {
 			grid-template-columns: 1fr;
 			gap: 1rem;
+			margin-top: 2rem;
 		}
 
 		.stat {
 			padding: 1.5rem;
+			background: rgba(255, 255, 255, 0.15);
+			backdrop-filter: blur(10px);
 		}
 
 		.stat-number {
 			font-size: 2rem;
+		}
+	}
+
+	/* Extra small screens */
+	@media (max-width: 480px) {
+		.hero-content {
+			gap: 2rem;
+			margin-top: 40px;
+		}
+
+		.hero-text h1 {
+			font-size: 2rem;
+		}
+
+		.hero-description {
+			font-size: 1rem;
+			padding: 0 0.5rem;
+		}
+
+		.hero-buttons .btn {
+			padding: 12px 24px;
+			min-width: 140px;
+			font-size: 0.95rem;
+		}
+
+		.hero-buttons .btn.btn-outline {
+			padding-left: 38px;
+		}
+
+		.coffee-cup {
+			width: 120px;
+			height: 150px;
+		}
+
+		.stat {
+			padding: 1rem;
+		}
+
+		.stat-number {
+			font-size: 1.8rem;
 		}
 	}
 </style>
