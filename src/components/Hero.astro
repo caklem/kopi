@@ -287,40 +287,67 @@
 	.hero-stats {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 2rem;
+		gap: 1.5rem;
 		margin-top: 4rem;
 		position: relative;
 		z-index: 2;
+		padding: 0 1rem;
 	}
 
 	.stat {
 		text-align: center;
-		padding: 2rem;
-		background: rgba(255, 255, 255, 0.1);
-		border-radius: 12px;
-		backdrop-filter: blur(10px);
-		border: 1px solid rgba(255, 255, 255, 0.2);
+		padding: 2rem 1.5rem;
+		background: rgba(255, 255, 255, 0.12);
+		border-radius: 16px;
+		backdrop-filter: blur(15px);
+		border: 1px solid rgba(255, 255, 255, 0.25);
+		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+		transition: all 0.3s ease;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.stat::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		background: linear-gradient(90deg, #FFD700, #FFA500);
+	}
+
+	.stat:hover {
+		transform: translateY(-5px);
+		background: rgba(255, 255, 255, 0.18);
+		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 	}
 
 	.stat-number {
-		font-size: 2.5rem;
-		font-weight: 700;
+		font-size: 2.8rem;
+		font-weight: 800;
 		color: #FFD700;
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.8rem;
+		text-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+		line-height: 1;
 	}
 
 	.stat-label {
-		font-size: 1rem;
-		color: rgba(255, 255, 255, 0.8);
+		font-size: 1.1rem;
+		color: rgba(255, 255, 255, 0.9);
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		font-size: 0.9rem;
 	}
 
 	@media (max-width: 768px) {
 		.hero-content {
 			grid-template-columns: 1fr;
-			gap: 3rem;
+			gap: 2.5rem;
 			text-align: center;
 			margin-top: 60px;
-			padding: 1rem 0;
+			padding: 2rem 1rem;
 		}
 
 		.hero-text h1 {
@@ -333,13 +360,14 @@
 			font-size: 1.1rem;
 			margin-bottom: 2rem;
 			padding: 0 1rem;
+			line-height: 1.6;
 		}
 
 		.hero-buttons {
 			justify-content: center;
 			flex-wrap: wrap;
 			gap: 1rem;
-			margin-bottom: 2rem;
+			margin-bottom: 1.5rem;
 		}
 
 		.hero-buttons .btn {
@@ -361,18 +389,26 @@
 
 		.hero-stats {
 			grid-template-columns: 1fr;
-			gap: 1rem;
-			margin-top: 2rem;
+			gap: 1.5rem;
+			margin-top: 3rem;
+			padding: 0 1.5rem;
 		}
 
 		.stat {
-			padding: 1.5rem;
+			padding: 2rem 1.5rem;
 			background: rgba(255, 255, 255, 0.15);
-			backdrop-filter: blur(10px);
+			backdrop-filter: blur(15px);
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			border-radius: 16px;
+			box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 		}
 
 		.stat-number {
-			font-size: 2rem;
+			font-size: 2.4rem;
+		}
+
+		.stat-label {
+			font-size: 0.95rem;
 		}
 	}
 
@@ -407,12 +443,23 @@
 			height: 150px;
 		}
 
+		.hero-stats {
+			gap: 1rem;
+			margin-top: 2.5rem;
+			padding: 0 1rem;
+		}
+
 		.stat {
-			padding: 1rem;
+			padding: 1.8rem 1.2rem;
+			border-radius: 14px;
 		}
 
 		.stat-number {
-			font-size: 1.8rem;
+			font-size: 2.1rem;
+		}
+
+		.stat-label {
+			font-size: 0.85rem;
 		}
 	}
 </style>
