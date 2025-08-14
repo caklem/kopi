@@ -1,0 +1,372 @@
+---
+---
+
+<section id="produk" class="products section">
+	<div class="container">
+		<div class="section-title">
+			<h2>Produk Kami</h2>
+			<p>Koleksi kopi pilihan dengan kualitas terbaik dan cita rasa yang tak terlupakan</p>
+		</div>
+
+		<div class="product-intro">
+			<p>
+				Agar pelanggan dapat menikmati rasa dan wangi kopi yang paling harum dan enak, disarankan untuk membeli secukupnya. 
+				Kami sengaja menyangrai kopi pada hari yang sama dengan hari kopi dijual agar pelanggan dapat menikmati kopi yang harum. 
+				Kopi yang dibeli disarankan untuk segera dikonsumsi dalam waktu 2 minggu - 1 bulan.
+			</p>
+		</div>
+
+		<div class="products-grid">
+			<div class="product-card">
+				<div class="product-image">
+					<div class="coffee-beans arabica"></div>
+					<div class="product-badge">Premium</div>
+				</div>
+				<div class="product-content">
+					<h3>Mokka Arabika</h3>
+					<p class="product-subtitle">"Harum, memiliki kandungan asam yang lembut dan rendah kafein"</p>
+					<p class="product-description">
+						100% Kopi Arabika, gabungan dari Priangan, Jawa, Aceh, Medan, Flores dan Timor. 
+						Kopi mentah disimpan selama 8 tahun dan disangrai menggunakan kayu selama 2 jam 
+						sehingga menghasilkan wangi dan rasa yang khas.
+					</p>
+					
+					<div class="product-options">
+						<h4>Tersedia dalam bentuk:</h4>
+						<ul>
+							<li>Biji matang (roasted beans)</li>
+							<li>Giling halus (fine grind) - Kopi Tubruk</li>
+							<li>Giling medium (medium grind) - Espresso, French Press, V60</li>
+							<li>Giling kasar (coarse grind) - Coffee Maker</li>
+						</ul>
+					</div>
+
+					<div class="pricing">
+						<div class="price-option">
+							<span class="weight">250 gram</span>
+							<span class="price">Rp 50.000</span>
+						</div>
+						<div class="price-option">
+							<span class="weight">500 gram</span>
+							<span class="price">Rp 100.000</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="product-card">
+				<div class="product-image">
+					<div class="coffee-beans robusta"></div>
+					<div class="product-badge">Strong</div>
+				</div>
+				<div class="product-content">
+					<h3>Robusta</h3>
+					<p class="product-subtitle">"Unggul di rasa pahit dan tinggi kafein"</p>
+					<p class="product-description">
+						100% Kopi Robusta, gabungan Robusta Sumatera dan Jawa. Kopi mentah dituakan 
+						selama 5 tahun kemudian disangrai dengan kayu selama 2 jam untuk menghasilkan 
+						karakter kuat yang khas Robusta.
+					</p>
+					
+					<div class="product-options">
+						<h4>Tersedia dalam bentuk:</h4>
+						<ul>
+							<li>Biji matang (roasted beans)</li>
+							<li>Giling halus (fine grind) - Kopi Tubruk</li>
+							<li>Giling medium (medium grind) - Espresso, French Press, V60</li>
+							<li>Giling kasar (coarse grind) - Coffee Maker</li>
+						</ul>
+					</div>
+
+					<div class="pricing">
+						<div class="price-option">
+							<span class="weight">250 gram</span>
+							<span class="price">Rp 40.000</span>
+						</div>
+						<div class="price-option">
+							<span class="weight">500 gram</span>
+							<span class="price">Rp 80.000</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="purchase-info">
+			<div class="info-card">
+				<h3>Informasi Pembelian</h3>
+				<ul>
+					<li>Pembelian setiap pelanggan dibatasi maksimal 3 kg</li>
+					<li>Kopi disangrai pada hari yang sama dengan hari penjualan</li>
+					<li>Konsumsi dalam waktu 2 minggu - 1 bulan untuk kualitas terbaik</li>
+					<li>Semua produk tanpa bahan kimia dan pengawet</li>
+				</ul>
+				<a href="#kontak" class="btn">Hubungi Kami</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.products {
+		background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+	}
+
+	.product-intro {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto 4rem;
+		padding: 2rem;
+		background: rgba(139, 69, 19, 0.05);
+		border-radius: 12px;
+		border-left: 4px solid #8B4513;
+	}
+
+	.product-intro p {
+		font-size: 1.1rem;
+		line-height: 1.7;
+		color: #555;
+		margin: 0;
+	}
+
+	.products-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		margin-bottom: 4rem;
+	}
+
+	.product-card {
+		background: white;
+		border-radius: 16px;
+		overflow: hidden;
+		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.product-card:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+	}
+
+	.product-image {
+		position: relative;
+		height: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+	}
+
+	.coffee-beans {
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		position: relative;
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+	}
+
+	.coffee-beans.arabica {
+		background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%);
+	}
+
+	.coffee-beans.robusta {
+		background: linear-gradient(135deg, #3E2723 0%, #5D4037 50%, #6D4C41 100%);
+	}
+
+	.coffee-beans::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 60%;
+		height: 2px;
+		background: rgba(0, 0, 0, 0.3);
+		border-radius: 2px;
+	}
+
+	.product-badge {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		background: #FFD700;
+		color: #2d2d2d;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.85rem;
+		font-weight: 600;
+	}
+
+	.product-content {
+		padding: 2rem;
+	}
+
+	.product-content h3 {
+		font-size: 1.8rem;
+		color: #2d2d2d;
+		margin-bottom: 0.5rem;
+	}
+
+	.product-subtitle {
+		font-style: italic;
+		color: #8B4513;
+		font-weight: 500;
+		margin-bottom: 1rem;
+		font-size: 1rem;
+	}
+
+	.product-description {
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+		color: #555;
+	}
+
+	.product-options h4 {
+		font-size: 1.1rem;
+		color: #2d2d2d;
+		margin-bottom: 0.8rem;
+	}
+
+	.product-options ul {
+		list-style: none;
+		margin-bottom: 2rem;
+	}
+
+	.product-options li {
+		padding: 0.4rem 0;
+		color: #555;
+		position: relative;
+		padding-left: 1.5rem;
+	}
+
+	.product-options li::before {
+		content: '●';
+		position: absolute;
+		left: 0;
+		color: #8B4513;
+	}
+
+	.pricing {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.price-option {
+		flex: 1;
+		min-width: 120px;
+		background: #f8f9fa;
+		padding: 1rem;
+		border-radius: 8px;
+		text-align: center;
+		border: 2px solid transparent;
+		transition: border-color 0.3s ease;
+	}
+
+	.price-option:hover {
+		border-color: #8B4513;
+	}
+
+	.weight {
+		display: block;
+		font-size: 0.9rem;
+		color: #666;
+		margin-bottom: 0.5rem;
+	}
+
+	.price {
+		display: block;
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: #8B4513;
+	}
+
+	.purchase-info {
+		text-align: center;
+	}
+
+	.info-card {
+		background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+		color: white;
+		padding: 3rem;
+		border-radius: 16px;
+		max-width: 600px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.info-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><circle cx="30" cy="30" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+		opacity: 0.3;
+	}
+
+	.info-card > * {
+		position: relative;
+		z-index: 2;
+	}
+
+	.info-card h3 {
+		font-size: 1.8rem;
+		margin-bottom: 1.5rem;
+		color: #FFD700;
+	}
+
+	.info-card ul {
+		list-style: none;
+		text-align: left;
+		margin-bottom: 2rem;
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.info-card li {
+		padding: 0.6rem 0;
+		position: relative;
+		padding-left: 2rem;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.info-card li::before {
+		content: '✓';
+		position: absolute;
+		left: 0;
+		color: #FFD700;
+		font-weight: bold;
+	}
+
+	@media (max-width: 768px) {
+		.products-grid {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.product-content {
+			padding: 1.5rem;
+		}
+
+		.pricing {
+			flex-direction: column;
+		}
+
+		.price-option {
+			min-width: auto;
+		}
+
+		.info-card {
+			padding: 2rem;
+		}
+
+		.info-card h3 {
+			font-size: 1.5rem;
+		}
+	}
+</style>
